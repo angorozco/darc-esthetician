@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+    --fontf: "Montserrat", sans-serif;
+    --color1: #f5ead9;
+    --color2: #dae4e3;
+    --color3: #bdd2c6;
+}
+
+/* --------------------general-------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontf);
+    color: rgb(41, 56, 48);
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+/* --------------------nav-------------------- */
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+.logo-container {
+    width: 100%;
+    height: 80px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .logo-container {
+        height: 100%;
+        width: 10%;
+    }
+    nav ul {
+        width: 60%;
+
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* --------------------header slider-------------------- */
+.slideshow-container {
+    max-width: 100%;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .slideshow-container {
+        height: 600px;
+    }
+}
+
+/* --------------------header slider-------------------- */
+#us {
+    width: 100%;
+}
+
+.us-info-container {
+    background-color: var(--color2);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+.us-img-container {
+    width: 100%;
+}
+
+.us-img {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    #us {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .us-info-container {
+        position: relative;
+        width: 400px;
+        height: 130px;
+        left: 50px;
+        top: 80px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .us-img-container {
+        width: 500px;
+    }
+    .us-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #us {
+        padding: 4rem;
+    }
+    .us-info-container {
+        height: 220px;
+        font-size: 1rem;
+    }
+}
+
+/* --------------------services-------------------- */
+#services {
+    width: 100%;
+    background-color: var(--color1);
+}
+
+.services-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.services-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-img {
+    width: 100%;
+}
+
+.services-info {
+    font-size: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    #services {
+        display: flex;
+        height: 60vh;
+    }
+
+    .services-img {
+        width: 40%;
+        object-fit: cover;
+    }
+    .services-info {
+        width: 60%;
+        padding: 4rem;
+    }
+
+    .services-list {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #services {
+        height: 80vh;
+    }
+    .services-info {
+        font-size: 1rem;
+    }
+}
