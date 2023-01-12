@@ -223,3 +223,49 @@ nav ul li a {
         font-size: 1rem;
     }
 }
+
+/* --------------------promos-------------------- */
+
+#promo {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.promo-card {
+    width: 300px;
+    padding: 3rem 1rem 1rem;
+    background-color: var(--color2);
+    position: relative;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 0.8rem;
+}
+
+.promo-icon {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .promo-cards-container {
+        padding: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .promo-card {
+        font-size: 1rem;
+        width: 200px;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .promo-card {
+        width: 300px;
+    }
+}
