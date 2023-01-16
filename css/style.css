@@ -29,6 +29,7 @@ header {
 
 nav {
     width: 100%;
+    padding: 0.5rem;
 }
 
 .logo-container {
@@ -251,6 +252,12 @@ nav ul li a {
     width: 50px;
 }
 
+.price {
+    color: rgb(224, 44, 224);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
     .promo-cards-container {
         padding: 3rem;
@@ -268,4 +275,116 @@ nav ul li a {
     .promo-card {
         width: 300px;
     }
+}
+
+/* --------------------contact-------------------- */
+
+#contact {
+    width: 100%;
+    background-color: var(--color3);
+    text-align: center;
+    font-size: 2rem;
+    padding: 6rem 4rem;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    background-color: var(--color1);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #contact {
+        padding: 8rem 4rem;
+    }
+}
+
+/* --------------------clients-------------------- */
+
+#clients {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.opinion {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+}
+
+.opinion-text {
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 100;
+}
+
+.bi-quote {
+    position: absolute;
+    font-size: 7rem;
+    color: var(--color1);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.opinion-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 552px) {
+    #clients {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #clients {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+/* --------------------footer-------------------- */
+
+footer {
+    text-align: center;
+    padding: 4rem;
+    background-color: #021f1c;
+}
+
+.socials {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color1);
+    margin-top: 4rem;
+}
+
+.socials i {
+    color: var(--color1);
+    font-size: 2rem;
 }
