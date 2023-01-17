@@ -56,6 +56,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: var(--color3);
+    font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,9 +72,11 @@ nav ul li a {
     }
     nav ul {
         width: 60%;
-
         padding: 0;
         margin: 0;
+    }
+    nav ul li a {
+        font-size: 1rem;
     }
 }
 
@@ -231,29 +234,32 @@ nav ul li a {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 0 2rem;
+}
+
+.promo-card-border {
+    width: 320px;
+    border: solid 2px #f5ead9;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
 .promo-card {
     width: 300px;
-    padding: 3rem 1rem 1rem;
+    height: 200px;
+    padding: 1rem;
     background-color: var(--color2);
-    position: relative;
     text-align: center;
-    margin: 2rem auto;
     font-size: 0.8rem;
-}
-
-.promo-icon {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .price {
-    color: rgb(224, 44, 224);
+    color: #bba079;
     margin-top: 1rem;
     font-weight: bold;
 }
@@ -263,6 +269,9 @@ nav ul li a {
         padding: 3rem;
         display: flex;
         justify-content: space-between;
+    }
+    .promo-card-border {
+        padding: 0;
     }
     .promo-card {
         font-size: 1rem;
@@ -301,7 +310,11 @@ nav ul li a {
     background-color: var(--color1);
     text-decoration: none;
     font-size: 1.3rem;
-    padding: 0.7rem 1rem;
+    padding: 1rem;
+}
+
+.btn:hover {
+    background-color: #fce0b7;
 }
 
 @media screen and (min-width: 768px) {
@@ -356,6 +369,7 @@ nav ul li a {
 .opinion-name {
     font-weight: bold;
     font-size: 0.8rem;
+    position: relative;
 }
 
 @media screen and (min-width: 552px) {
@@ -381,7 +395,7 @@ footer {
 }
 
 .socials {
-    width: 80%;
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -392,4 +406,15 @@ footer {
 .socials i {
     color: var(--color1);
     font-size: 2rem;
+}
+
+/* --------------------whatsapp icon-------------------- */
+
+.bi-whatsapp {
+    font-size: 60px;
+    color: green;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
